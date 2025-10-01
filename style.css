@@ -1,0 +1,36 @@
+ p { /*S'appliquera à tous les paragraphe (balise p)*/
+     font-family: Arial;
+ }
+
+ h1,
+ h2 { /*S'appliquera à la fois aux h1 et h2 */
+     color: fuchsia;
+ }
+
+ #paragraphe1 { /* Un sélecteur commençant par "#" vise un identifiant (unique) */
+    font-size: larger;
+ }
+
+ .surlignage { /* Même principe avec "." pour une classe */
+    background-color: rgb(250,235,05)
+    ;
+    border:1px solid orange;
+ }
+
+ .couleur-de-texte-bleu { /* On vise toute les balise pourtant la classe "couleur-de-texte-bmeu" et se trouvant DANS un paragraphe*/
+    color: blue;
+ }
+/* Ce qui est différent de : */
+ p .couleur-de-texte-bleu {
+    text-decoration-line: line-through;
+ }
+
+ /* Ce qui est différent de : */
+ p.couleur-de-texte-bleu {
+    /* On vise tout paragraphe portant la classe "couleur-de-texte-bleu" */
+ }
+
+ /* On peut aussi viser des éléments à condition qu'ils soient dans une certain "état" (par exemple survolés par la souris) : */
+ .surlignage:hover {
+    background-color: blueviolet;
+ }
